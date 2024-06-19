@@ -11,8 +11,8 @@ def change_dir_to_this_file():
     if cwd != path_of_this_file:
         os.chdir(path_of_this_file)
 
-    if not os.path.exists('todos'):
-        with open('todos', 'w') as f:
+    if not os.path.exists('todos.txt'):
+        with open('todos.txt', 'w') as f:
             f.write("")
 
 
